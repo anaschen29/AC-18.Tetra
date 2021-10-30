@@ -4,4 +4,4 @@ Setup is pretty straight forward. The base directory is assumed to be the place 
 3. `pip3 install -r requirements.txt`
 4. `python3 -i tetra.py` or `python3 -i 'Symbolic Tetra.py'` depending on which modules you want to use.
 
-My write-up of the final product is available in the ./TeX directory.
+A description of this project is in the /TeX directory
