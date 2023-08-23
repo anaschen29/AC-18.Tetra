@@ -123,8 +123,9 @@ def dimensions(v):
 
 def check_dehn_invariant(vec):
     D=WD_matrix(vec).det()
-    #id -2D is not square-equiv to -1, -3; we can end this
     
+    if not is_square(2*D) and not is_square(6*D):
+        return False       
     
     #input is in kkpr format
     value = product([lengths_to_dihedral_exponentials(vec)[edge] for edge in [(1,2), (1,3), (1,4), (2,3), (2,4), (3,4)]])
