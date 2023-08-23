@@ -9,4 +9,4 @@ The code is split into a few files.
 
 - symbolic tetra.py: similar to tetra.py, but with symbolic computations for exact values (primarily using sympy)
 
-- dimension.py: computing the dimension of a tetrahedron (defined as the $\mathbb{Q}$-span of the dihedral angles in $\mathbb{R}/\mathbb{Q}\pi$). 
+- dimension.sage: computing the dimension of a tetrahedron (defined as the $\mathbb{Q}$-span of the dihedral angles in $\mathbb{R}/\mathbb{Q}\pi$). 
