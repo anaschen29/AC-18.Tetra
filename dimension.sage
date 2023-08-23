@@ -124,8 +124,7 @@ def dimensions(v):
 def check_dehn_invariant(vec):
     """
     Parameters
-    lengths: List of integer Edge lengths [12,13,14,23,24,34].
-    
+    lengths: List of integer Edge lengths [12,13,14,23,24,34].    
     Returns: True if Dehn invariant is zero, False otherwise.
     """
 
