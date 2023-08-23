@@ -122,12 +122,15 @@ def dimensions(v):
     return val_matrix.rank()
 
 def check_dehn_invariant(vec):
-    D=WD_matrix(vec).det()
-    
-    if not is_square(2*D) and not is_square(6*D):
-        return False       
-    
-    #input is in kkpr format
+    """
+    Parameters
+    lengths: List of integer Edge lengths [12,13,14,23,24,34].    
+    Returns: True if Dehn invariant is zero, False otherwise.
+    """
+
+    # D=WD_matrix(vec).det()
+    # id -2D is not square-equiv to -1, -3; we can end this
+
     value = product([lengths_to_dihedral_exponentials(vec)[edge] for edge in [(1,2), (1,3), (1,4), (2,3), (2,4), (3,4)]])
     if bool(value**4==1) or bool(value**3==1):
         return True
