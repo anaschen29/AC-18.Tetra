@@ -326,8 +326,14 @@ def check_welldefined(lengths):
     True if the edge lengths define a non-degenerate tetrahedron
     False Otherwise
     """
+    def triangle(a,b,c):
+        if a<b+c and b<a+c and c<a+b:
+            return True
+        return False
+    
+    
     D=WD_matrix(lengths)
-    if D.det()>0:
+    if D.det()>0 and trangle(lengths[0], lengths[1], lengths[3]):
         return True
 
 def find_welldefinedrange(lengths):
