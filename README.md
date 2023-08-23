@@ -5,6 +5,8 @@ This code was developped throughout the 18.Tetra project, an undergraduate resea
 
 The code is split into a few files. 
 
-tetra.py: various computations for tetrahedra, converting between edge lengths and dihedral angles, etc... 
-symbolic tetra.py: similar to tetra.py, but with symbolic computations for exact values (primarily using sympy)
-dimension.py: computing the dimension of a tetrahedron (defined as the Q-span of the dihedral angles in R/Qpi). 
+- tetra.py: various computations for tetrahedra, converting between edge lengths and dihedral angles, etc... 
+
+- symbolic tetra.py: similar to tetra.py, but with symbolic computations for exact values (primarily using sympy)
+
+- dimension.py: computing the dimension of a tetrahedron (defined as the $\mathbb{Q}$-span of the dihedral angles in $\mathbb{R}/\mathbb{Q}\pi$). 
