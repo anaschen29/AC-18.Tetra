@@ -128,8 +128,9 @@ def check_dehn_invariant(vec):
     Returns: True if Dehn invariant is zero, False otherwise.
     """
 
-    # D=WD_matrix(vec).det()
-    # id -2D is not square-equiv to -1, -3; we can end this
+    D=WD_matrix(vec).det()
+    if not is_square(2*D) and not is_square(6*D): #necessary condition for K to include
+        return False   
 
     value = product([lengths_to_dihedral_exponentials(vec)[edge] for edge in [(1,2), (1,3), (1,4), (2,3), (2,4), (3,4)]])
     if bool(value**4==1) or bool(value**3==1):
