@@ -1,5 +1,5 @@
 # AC-18.Tetra
-Python files for the TETRA project. 
+Files for the TETRA project. 
 
 This code was developped throughout the 18.Tetra project, an undergraduate research project regarding tetrahedra led by Prof. Poonen at MIT. 
 
